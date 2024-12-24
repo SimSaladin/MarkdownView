@@ -38,4 +38,11 @@ captures/
 .idea/workspace.xml
 .idea/tasks.xml
 .idea/datasources.xml
-.idea/dataSources.ids
+.idea/dataSources.ids*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
