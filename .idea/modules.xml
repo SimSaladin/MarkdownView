@@ -4,9 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MarkdownView.iml" filepath="$PROJECT_DIR$/.idea/modules/MarkdownView.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MarkdownView.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/MarkdownView.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MarkdownView.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MarkdownView.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MarkdownView.main.iml" filepath="$PROJECT_DIR$/.idea/modules/MarkdownView.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/markdownview/MarkdownView.markdownview.iml" filepath="$PROJECT_DIR$/.idea/modules/markdownview/MarkdownView.markdownview.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MarkdownView.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/MarkdownView.unitTest.iml" />
     </modules>
   </component>
