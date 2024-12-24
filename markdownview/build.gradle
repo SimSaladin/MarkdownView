@@ -1,5 +1,8 @@
 apply plugin: 'com.android.library'
 
+version = "1.1.0"
+group = 'us.feras.mdv'
+
 ext {
     PUBLISH_GROUP_ID = 'us.feras.mdv'
     PUBLISH_ARTIFACT_ID = 'markdownview'
