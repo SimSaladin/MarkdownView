@@ -15,12 +15,12 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.7.3'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
     }
 }
 
 android {
     namespace = "us.feras.mdv"
+
     compileSdkVersion 35
     buildToolsVersion "35.0.0"
 
@@ -39,6 +39,11 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
     }
 }
 
@@ -69,10 +74,14 @@ dependencies {
 
 publishing {
     publications {
-        maven(MavenPublication) {
+        release(MavenPublication) {
             groupId 'us.feras.mdv'
             artifactId 'markdownview'
             version '1.1.0'
+
+            afterEvaluate {
+                from components.release
+            }
         }
     }
 }
