@@ -70,9 +70,9 @@ dependencies {
 publishing {
     publications {
         maven(MavenPublication) {
-            groupId project.group
-            artifactId project.name
-            version project.version
+            groupId 'us.feras.mdv'
+            artifactId 'markdownview'
+            version '1.1.0'
         }
     }
 }
