@@ -21,14 +21,14 @@ buildscript {
 android {
     namespace = "us.feras.mdv"
 
-    compileSdkVersion 35
+    compileSdk 35
     buildToolsVersion "35.0.0"
 
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 35
         versionCode 2
-        versionName "1.1"
+        versionName "1.1.0"
     }
     buildTypes {
         release {
@@ -48,21 +48,10 @@ android {
 }
 
 allprojects {
-	// apply plugin: 'java'
-
-
-	//sourceCompatibility = 1.8 // java 8
-	//targetCompatibility = 1.8
-
-	//java {
-	//	withSourcesJar()
-	//	withJavadocJar()
-	//}
-
-        repositories {
-           google()
-           mavenCentral()
-        }
+    repositories {
+       google()
+       mavenCentral()
+    }
 }
 
 dependencies {
@@ -72,14 +61,13 @@ dependencies {
     implementation 'org.markdownj:markdownj-core:0.4'
 }
 
-publishing {
-    publications {
-        release(MavenPublication) {
-            groupId 'us.feras.mdv'
-            artifactId 'markdownview'
-            version '1.1.0'
-
-            afterEvaluate {
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                groupId 'us.feras.mdv'
+                artifactId 'markdownview'
+                version '1.1.0'
                 from components.release
             }
         }
